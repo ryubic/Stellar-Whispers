@@ -1,6 +1,9 @@
+import apiKey from "./apiKey";
+
+let api = `https://newsapi.org/v2/everything?q=all&apiKey=${apiKey}`
 export default async function fetchData(setInto) {
     try {
-        let response = await fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=9b0b2611cfdf439dbc4f55817cd20edb')
+        let response = await fetch(api)
         if (!response.ok) {
             console.log("error fetching data");
         }
