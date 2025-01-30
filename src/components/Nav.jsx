@@ -1,15 +1,27 @@
-import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 function Nav() {
-    let navItems = ["Market", "Economics", "Industries", "Tech", "Politics", "Businessweek", "Opinion", "More"]
+
+  let navItems = ["Articles", "Blogs", "Reports", "Saved"]
+
   return (
-    
-    <nav className='h-[40px] w-screen bg-zinc-900 flex justify-center sticky font-onest'>
-        <ul className='w-screen flex md:px-[3vw] md:justify-between sm:justify-evenly  self-center '>
-        {navItems.map((item, index)=>{
-            return <button key={index} className='text-white hover:bg-zinc-700 px-[1vw] py-2'>{item}</button>
+    <nav className='sticky top-0 hidden sm:flex sm:h-[40px] w-screen bg-black justify-center'>
+      <ul className='h-full w-screen flex sm:px-[7vw] sm:justify-between self-center'>
+        {navItems.map((item, index) => {
+          return (
+            <li className='flex items-center' key={index}>
+              <NavLink
+                to={index === 0 ? '/' : `/${item.toLowerCase()}`}
+                className={({ isActive }) =>
+                  `h-full flex items-center font-bold text-xl px-[1vw] ${isActive ? "text-orange-500" : "text-white"}`
+                }
+              >
+                {item}
+              </NavLink>
+            </li>
+          )
         })}
-        </ul>
+      </ul>
     </nav>
   )
 }

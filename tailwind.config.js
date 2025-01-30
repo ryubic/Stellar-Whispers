@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        onest: ["Onest", "serif"],
-        pacifico: ["Pacifico", "serif"],
+        onest: ["Onest", "arial"],
+        JosefinSans: ["Josefin Sans", "serif"],
       },
     },
   },
