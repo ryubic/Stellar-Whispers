@@ -3,15 +3,25 @@ import React from 'react'
 function Footer() {
   return (
     <>
-     <div className='w-screen bg-zinc-900 text-white self-center text-xl'>
-        <div className='py-5 text-4xl flex px-5 items-center font-JosefinSans font-bold
-        '>Steller Whispers</div>
-        <div className='min-h-[40vh] py-5 border-[1px] border-white/20 flex px-5 items-center
-        '> Copyright Details.
-        <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rerum quibusdam delectus dolor, neque culpa quam quidem tenetur, praesentium modi sapiente tempore dolorem, voluptates itaque consequuntur? Nemo esse culpa fuga tempora dolorum totam maxime nulla maiores soluta fugit quisquam doloribus corrupti, quod nobis voluptatum iusto quae at dignissimos itaque id? Minus voluptates neque consectetur soluta.
+      <div className='w-screen bg-[#1c1d22] text-white self-center '>
+        <div className='py-5 text-4xl flex px-5 items-center font-onest font-bold cursor-default select-none
+        '>Stellar Whispers</div>
+        <div className='py-5 font-onest text-xl border border-white/20 px-5 items-center
+        '> Credits:
+          <p className='text-base'>
+            <span>This website uses data from </span>
+            <a className='text-indigo-400' href="https://www.spaceflightnewsapi.net" target="_blank" rel="noopener noreferrer">
+            Spaceflight News API
+            </a>
+            <span> to provide up-to-date space-related news. Additionally, the light and dark mode icons are sourced from </span>
+            <a className='text-indigo-400' href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer">
+              Flaticon.
+            </a><span> A huge thanks to these platforms for their valuable resources!</span>
+          </p>
+
+
         </div>
-    </div>
+      </div>
     </>
   )
 }

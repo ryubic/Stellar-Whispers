@@ -1,15 +1,28 @@
 import { createContext, useContext } from "react";
 
-// Create a context with default values
+// Context with default values
 export const AppContext = createContext({
     darkMode: false,
-    articlesResponse: null,
-    blogsResponse: null,
-    reportsResponse:null,
     toggleTheme: ()=>{},
+    isSmallScreen: false,
+
+    navVisibility: false,
+    changeNavVisibility: ()=>{},
+
+    articlesResponse: {},
+    articlesArray:[],
     setArticlesResponse: ()=>{},
+    setArticlesArray: ()=>{},
+    
+    blogsResponse: {},
+    blogsArray: [],
     setBlogsResponse: ()=>{},
+    setBlogsArray: ()=>{},
+
+    reportsResponse:{},
+    reportsArray: [],
     setReportsResponse: ()=>{},
+    setReportsArray:()=>{}
 })
 
 export const AppContextProvider = AppContext.Provider

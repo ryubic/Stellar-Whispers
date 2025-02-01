@@ -1,4 +1,10 @@
-import Header from "./header";
+import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
-export {Header, Nav} 
+import Articles from "./Articles";
+import Blogs from "./Blogs";
+import Reports from "./Reports";
+import Saved from "./Saved";
+
+export { Header, Nav, Footer, Articles, Blogs, Reports, Saved } 
