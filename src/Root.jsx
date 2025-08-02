@@ -5,9 +5,9 @@ import { AppContextProvider } from './context/context'
 import fetchData from './backend'
 
 // APIs
-const articlesApi = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=16'
-const blogsApi = 'https://api.spaceflightnewsapi.net/v4/blogs/?limit=16'
-const reportsApi = 'https://api.spaceflightnewsapi.net/v4/reports/?limit=16'
+const articlesApi = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=22'
+const blogsApi = 'https://api.spaceflightnewsapi.net/v4/blogs/?limit=22'
+const reportsApi = 'https://api.spaceflightnewsapi.net/v4/reports/?limit=22'
 
 export default function Root() {
 

@@ -39,7 +39,7 @@ function Reports() {
                                 }
                                 return
                             }}
-                            className='font-onest text-2xl bg-indigo-500  text-white dark:bg-indigo-500 dark:shadow-lg dark:shadow-indigo-500/50 px-4 py-2 rounded hover:bg-indigo-600 dark:hover:bg-indigo-600 active:scale-95 transition-all duration-500'>Load more</button>
+                            className='font-onest font-bold text-2xl bg-[#1c1d22] dark:bg-white/80 text-white dark:text-black rounded-3xl hover:rounded-lg px-4 py-2 active:scale-95 transition-all duration-500'>Load more</button>
                     </div>
                 </>
 
