@@ -19,7 +19,7 @@ function Header() {
           <button
             onClick={changeNavVisibility}
             className='sm:hidden flex flex-col gap-1 justify-center cursor-pointer'>
-            <span className={`w-8 border-b-4 border-red-700 transition-all duration-300 ${navVisibility ? "rotate-45 translate-y-2" : ""}`}></span>
+            <span className={`w-8 border-b-4 border-indigo-400 transition-all duration-300 ${navVisibility ? "rotate-45 translate-y-2" : ""}`}></span>
             <span className={`w-8 border-b-4 border-gray-300 transition-all duration-100 ${navVisibility ? "opacity-0" : ""}`}></span>
             <span className={`w-8 border-b-4 border-gray-300 transition-all duration-300 ${navVisibility ? "-rotate-45 -translate-y-2" : ""}`}></span>
           </button>

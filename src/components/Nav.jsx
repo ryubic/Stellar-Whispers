@@ -20,7 +20,7 @@ function Nav() {
                 to={index === 0 ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
                   `h-full sm:w-auto text-right block items-center font-onest font-semibold text-gray-300 text-2xl px-[1vw] ${
-                    isActive ?  "underline text-red-700 sm:text-indigo-400" : ""}`
+                    isActive ?  "underline text-indigo-400" : ""}`
                 }
               >
                 {item}
