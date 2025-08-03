@@ -19,12 +19,15 @@ function HorizontalCard({ element }) {
             font-onest border-b border-gray-500 p-7 cursor-default"
       >
         {element.image_url ? (
-            <img
-              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_600/${element.image_url}`}
-              alt=""
-              className="rounded self-center h-[200px] sm:h-fit max-w-fit sm:w-[37vw]"
-              loading="lazy"
-            />
+          <img
+            src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_400/${element.image_url}`}
+            alt=""
+            className="rounded self-center h-[250px] w-[400px] sm:h-fit"
+            loading="lazy"
+            onError={(e) => {
+              e.target.style.display = "none"; // hides the image element
+            }}
+          />
         ) : (
           ""
         )}
@@ -38,7 +41,10 @@ function HorizontalCard({ element }) {
             {element.news_site ? element.news_site : ""},<br />
             {date(element.published_at ? element.published_at : "")}
           </p>
-          <a href={`${element.url}`} className="self-end text-right text-indigo-600 dark:text-indigo-400 visited:text-purple-700 underline">
+          <a
+            href={`${element.url}`}
+            className="self-end text-right text-orange-500 visited:text-purple-700 underline"
+          >
             Read full article
           </a>
         </div>
