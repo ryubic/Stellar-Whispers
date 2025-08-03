@@ -20,9 +20,10 @@ function HorizontalCard({ element }) {
       >
         {element.image_url ? (
             <img
-              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto/${element.image_url}`}
+              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_600/${element.image_url}`}
               alt=""
               className="rounded self-center h-[200px] sm:h-fit max-w-fit sm:w-[37vw]"
+              loading="lazy"
             />
         ) : (
           ""
