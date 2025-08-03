@@ -12,30 +12,23 @@ function date(isoDate) {
 }
 
 function HorizontalCard({ element }) {
-  function visitURL() {
-    // window.location.href= `${element.url}`
-    window.open(`${element.url}`);
-  }
-
   return (
     <>
       <article
-        className="md:max-w-[67vw] flex flex-col lg:flex-row gap-5
-            font-onest border-b sm:border border-gray-500 p-7 hover:text-black/85 dark:hover:text-white/90 cursor-default"
+        className="flex flex-col sm:flex-row gap-5
+            font-onest border-b border-gray-500 p-7 cursor-default"
       >
         {element.image_url ? (
-          <div className="flex justify-center">
             <img
-              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_800/${element.image_url}`}
+              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_600/${element.image_url}`}
               alt=""
-              className="rounded min-w-full max-h-[250px] sm:max-h-[full] lg:max-w-[35vw]"
+              className="rounded self-center h-[200px] sm:h-fit max-w-fit sm:w-[37vw]"
             />
-          </div>
         ) : (
           ""
         )}
         <div className=" overflow-hidden flex flex-col gap-3 w-full">
-          <h2 className="font-bold text-2xl flex justify-start">
+          <h2 className="font-bold text-2xl flex justify-start leading-tight">
             {element.title}
           </h2>
           <p>{element.summary}</p>
@@ -44,7 +37,7 @@ function HorizontalCard({ element }) {
             {element.news_site ? element.news_site : ""},<br />
             {date(element.published_at ? element.published_at : "")}
           </p>
-          <a href={`${element.url}`} className="self-end text-right  visited:text-purple-700 underline">
+          <a href={`${element.url}`} className="self-end text-right text-indigo-600 dark:text-indigo-400 visited:text-purple-700 underline">
             Read full article
           </a>
         </div>

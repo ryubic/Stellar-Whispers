@@ -92,7 +92,7 @@ export default function Root() {
         <AppContextProvider value={{ isSmallScreen, darkMode, toggleTheme, articlesResponse, articlesArray, setArticlesResponse, setArticlesArray, blogsResponse, blogsArray, setBlogsResponse, setBlogsArray, reportsResponse, reportsArray, setReportsResponse, setReportsArray, navVisibility, changeNavVisibility }}>
           <Header />
           <Nav />
-          <div className='w-screen bg-gray-300 text-black dark:bg-[#1c1d22] dark:text-white transition-all duration-300 ease-[cubic-bezier(0.42,_0,_0.58,_1)]'>
+          <div className='w-screen transition-all duration-300 ease-[cubic-bezier(0.42,_0,_0.58,_1)]'>
             <Outlet />
           </div>
           <Footer />

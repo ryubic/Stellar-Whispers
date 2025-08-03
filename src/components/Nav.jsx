@@ -9,7 +9,7 @@ function Nav() {
     <nav
       className={`${
         !navVisibility ? "translate-y-[-100vw]" : "block"
-      } select-none sm:translate-y-0 sm:block fixed sm:sticky sm:top-0 lg:px-[4vw] w-screen justify-center transition-all duration-300 ease-[cubic-bezier(0.42,_0,_0.58,_1)] bg-[#1c1d22] rounded-b-3xl sm:rounded-none min-w-full`}
+      } select-none sm:translate-y-0  sm:block fixed sm:sticky sm:top-0 lg:px-[4vw] w-screen justify-center transition-all duration-300 ease-[cubic-bezier(0.42,_0,_0.58,_1)] bg-[#1c1d22] min-w-full py-1 sm:py-0`}
     >
       <ul className="flex flex-col px-[4vw] py-3 sm:p-0 sm:flex sm:flex-row sm:items-center sm:justify-around self-center ">
         {navItems.map((item, index) => {
@@ -19,8 +19,8 @@ function Nav() {
                 onClick={changeNavVisibility}
                 to={index === 0 ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `h-full flex items-center font-onest font-semibold text-white text-2xl px-[1vw] ${
-                    isActive ?  "underline" : ""}`
+                  `h-full flex items-center font-onest font-semibold text-gray-300 text-2xl px-[1vw] ${
+                    isActive ?  "underline text-indigo-400" : ""}`
                 }
               >
                 {item}

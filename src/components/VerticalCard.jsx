@@ -25,7 +25,7 @@ function VerticalCard({ element }) {
             font-onest border border-gray-500 p-7 hover:text-black/75 dark:hover:text-white/90'>
                 {element.image_url ?
                     <div className='cursor-pointer'>
-                        <img src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_800/${element.image_url}`} alt="" className='max-h-full min-w-full rounded' />
+                        <img src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_400/${element.image_url}`} alt="" className='max-h-full min-w-full rounded' />
                     </div>
                     : ""}
                 <div className='overflow-hidden flex flex-col gap-3 cursor-pointer'>
