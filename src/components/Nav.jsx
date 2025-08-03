@@ -36,9 +36,15 @@ function Nav() {
             className="p-1 rounded w-[45px]"
           >
             {darkMode ? (
-              <img className="max-w-[35px]" src="/darkIcon.png" alt="" />
+              <>
+              <img className="max-w-[35px]" src="/lightIcon.png" alt="" aria-hidden="true"/>
+              <span className="sr-only">switch to light mode</span>
+              </>
             ) : (
-              <img className="max-w-[35px]" src="/lightIcon.png" alt="" />
+              <>
+              <img className="max-w-[35px]" src="/darkIcon.png" alt="" aria-hidden="true"/>
+              <span className="sr-only">switch to dark mode</span>
+              </>
             )}
           </button>
         </li>
