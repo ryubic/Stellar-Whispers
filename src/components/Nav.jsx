@@ -19,8 +19,8 @@ function Nav() {
                 onClick={changeNavVisibility}
                 to={index === 0 ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `h-full sm:w-auto text-right block items-center font-onest font-semibold text-gray-300 text-2xl px-[1vw] ${
-                    isActive ?  "underline text-orange-500" : ""}`
+                  `h-full sm:w-auto text-right block items-center font-onest font-semibold text-2xl px-[1vw] ${
+                    isActive ?  "underline text-[#8080ff]" : "text-gray-300"}`
                 }
               >
                 {item}
@@ -37,12 +37,12 @@ function Nav() {
           >
             {darkMode ? (
               <>
-              <img className="max-w-[35px]" src="/lightIcon.png" alt="" aria-hidden="true"/>
+              <img className="max-w-[35px] rotate-45" src="/moon.svg" alt="" aria-hidden="true"/>
               <span className="sr-only">switch to light mode</span>
               </>
             ) : (
               <>
-              <img className="max-w-[35px]" src="/darkIcon.png" alt="" aria-hidden="true"/>
+              <img className="max-w-[35px]" src="/sun.svg" alt="" aria-hidden="true"/>
               <span className="sr-only">switch to dark mode</span>
               </>
             )}
