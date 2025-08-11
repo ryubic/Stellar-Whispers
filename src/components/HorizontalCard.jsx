@@ -15,15 +15,15 @@ function HorizontalCard({ element }) {
   return (
     <>
       <article
-        className="flex flex-col sm:flex-row gap-5
-            font-onest border-b border-gray-500 px-8 py-7 cursor-default"
+        className="flex flex-col sm:flex-row gap-4
+            font-onest border-b border-gray-500 p-5 cursor-default"
       >
         {element.image_url ? (
-          <div className="sm:w-[40vw] sm:max-h-[350px] sm:max-w-full flex justify-center md:mr-3">
+          <div className="flex justify-center">
             <img
-              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,h_500/${element.image_url}`}
+              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_400/${element.image_url}`}
               alt=""
-              className="rounded self-center max-h-[500px] sm:h-fit"
+              className="rounded self-center sm:w-[30vw] sm:min-w-[30vw] max-h-[350px] md:mr-3"
               onError={(e) => {
                 e.target.style.display = "none"; // hides the image element
               }}
