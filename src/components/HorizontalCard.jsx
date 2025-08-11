@@ -19,11 +19,11 @@ function HorizontalCard({ element }) {
             font-onest border-b border-gray-500 px-8 py-7 cursor-default"
       >
         {element.image_url ? (
-          <div className="sm:w-[40vw] sm:max-h-[350px] sm:max-w-full flex justify-center mr-3">
+          <div className="sm:w-[40vw] sm:max-h-[350px] sm:max-w-full flex justify-center md:mr-3">
             <img
-              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,w_500/${element.image_url}`}
+              src={`https://res.cloudinary.com/dpmcuhjyw/image/fetch/f_auto,q_auto,h_500/${element.image_url}`}
               alt=""
-              className="rounded self-center max-h-full sm:h-fit"
+              className="rounded self-center max-h-[500px] sm:h-fit"
               onError={(e) => {
                 e.target.style.display = "none"; // hides the image element
               }}
@@ -44,9 +44,10 @@ function HorizontalCard({ element }) {
           </p>
           <a
             href={`${element.url}`}
-            className="self-end font-bold text-right text-blue-600 visited:text-purple-700 dark:text-[#8080ff] dark:visited:text-purple-600 underline"
+            className="self-end transition-all duration-500 focus:rotate-45"
           >
-            Read full article
+            <img alt="read full article" src="/redirect.svg"
+            className="h-10 "/>
           </a>
         </div>
       </article>

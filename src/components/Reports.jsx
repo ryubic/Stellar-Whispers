@@ -25,9 +25,9 @@ function Reports() {
                 }
                 return;
               }}
-              className="font-onest font-bold text-2xl bg-[#1c1d22] text-gray-300 dark:bg-gray-300 dark:text-black rounded-3xl active:rounded-lg md:hover:rounded-lg px-4 py-2 md:active:scale-95 transition-all duration-500"
+              className="font-onest font-bold text-2xl bg-[#1c1d22] text-gray-300 dark:bg-gray-300 dark:text-black rounded-3xl md:hover:rounded-lg px-4 py-2 md:active:scale-95 transition-all duration-500"
             >
-              Load more
+              Read more
             </button>
           </div>
         </>
